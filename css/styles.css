@@ -8,21 +8,21 @@ li {
 
 /*********** Mobile Styling ************/
 header {
-  height: 100px;
+  height: 70px;
   border-bottom: 1px solid #000; }
 
-h1, .nav {
+h1, nav {
   display: inline-block; }
 
 h1 {
-  margin: 10px, 10px; }
+  margin-left: 20px; }
 
-.nav {
+nav {
   float: right; }
-  .nav ul {
+  nav ul {
     float: right;
     padding-left: 0px; }
-    .nav ul li {
+    nav ul li {
       display: inline;
       padding: 10px;
       margin-right: 10px; }

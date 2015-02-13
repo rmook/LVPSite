@@ -14,19 +14,19 @@ li {
 /*********** Mobile Styling ************/
 
 header {
-	height: 100px;
+	height: 70px;
 	border-bottom: 1px solid #000;
 }
 
-h1, .nav {
+h1, nav {
 	display: inline-block;
 }
 
 h1 {
-	margin: 10px, 10px;
+	margin-left: 20px;
 }
 
-.nav {
+nav {
 	float: right;
 
 	ul {
