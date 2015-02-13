@@ -1,3 +1,30 @@
+/*********** Remove default styling ***********/
+a {
+  color: #000;
+  text-decoration: none; }
 
+li {
+  list-style: none; }
+
+/*********** Mobile Styling ************/
+header {
+  height: 100px;
+  border-bottom: 1px solid #000; }
+
+h1, .nav {
+  display: inline-block; }
+
+h1 {
+  margin: 10px, 10px; }
+
+.nav {
+  float: right; }
+  .nav ul {
+    float: right;
+    padding-left: 0px; }
+    .nav ul li {
+      display: inline;
+      padding: 10px;
+      margin-right: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
