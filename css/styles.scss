@@ -13,30 +13,16 @@ li {
 
 /*********** Mobile Styling ************/
 
-header {
-	height: 70px;
-	border-bottom: 1px solid #000;
+.banner {
+	margin-top: 50px;
+	height: 240px;
+	border-bottom: 2px solid #000;
+	background-color: #999;
 }
 
-h1, nav {
-	display: inline-block;
-}
-
-h1 {
-	margin-left: 20px;
-}
-
-nav {
-	float: right;
-
-	ul {
-		float: right;
-		padding-left: 0px;
-
-		li {
-			display: inline;
-			padding: 10px;
-			margin-right: 10px;
-		}
-	}
+.navbar-right li {
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	height: 60px;
+	margin-top: 15px;
 }
