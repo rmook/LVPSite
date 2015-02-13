@@ -7,6 +7,11 @@ li {
   list-style: none; }
 
 /*********** Mobile Styling ************/
+.navbar-brand {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
 .banner {
   margin-top: 50px;
   height: 240px;
@@ -27,5 +32,20 @@ li {
     margin-right: 20px; }
   .event h1, .listen h1 {
     padding-left: 20px; }
+
+.footer {
+  height: 100px;
+  padding-top: 10px;
+  background-color: #ddd; }
+  .footer p {
+    display: inline;
+    float: left;
+    margin-bottom: 5px; }
+  .footer .social-links {
+    display: inline; }
+    .footer .social-links .social-icon {
+      float: right;
+      padding-right: 5px;
+      margin-right: 5px; }
 
 /*# sourceMappingURL=styles.css.map */
