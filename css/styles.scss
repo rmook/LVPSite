@@ -26,3 +26,15 @@ li {
 	height: 60px;
 	margin-top: 15px;
 }
+
+.event, .listen {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+	p, button {
+		margin-left: 80px;
+		margin-right: 20px;
+	}
+	h1 {
+		padding-left: 20px;
+	}
+}

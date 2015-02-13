@@ -19,4 +19,13 @@ li {
   height: 60px;
   margin-top: 15px; }
 
+.event, .listen {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px; }
+  .event p, .event button, .listen p, .listen button {
+    margin-left: 80px;
+    margin-right: 20px; }
+  .event h1, .listen h1 {
+    padding-left: 20px; }
+
 /*# sourceMappingURL=styles.css.map */
