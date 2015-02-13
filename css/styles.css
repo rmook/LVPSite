@@ -26,6 +26,9 @@ li {
   height: 60px;
   margin-top: 15px; }
 
+.event {
+  border-bottom: 1px solid #ddd; }
+
 .event, .listen {
   height: 180px;
   padding-bottom: 20px; }
@@ -35,13 +38,10 @@ li {
   .event h1, .listen h1 {
     padding-left: 20px; }
 
-.event, .about-splash {
-  border-bottom: 1px solid #ddd; }
-
 .col-sm-4 {
   border-left: 1px solid #ddd; }
 
-.splash-about {
+.splash-about, .watch {
   display: none; }
 
 .about {
@@ -84,7 +84,24 @@ li {
     height: 350px; }
 
   .splash-about {
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     display: inline-block;
-    height: 180px; } }
+    height: 180px; }
+
+  .watch {
+    display: inline-block;
+    border-left: 1px solid #ddd;
+    height: 300px; }
+    .watch .screen {
+      float: right;
+      margin-right: 50px;
+      height: 120px;
+      width: 200px;
+      background-color: #aaa;
+      border-radius: 10px; }
+      .watch .screen button {
+        margin-left: 80px;
+        margin-top: 50px; } }
 
 /*# sourceMappingURL=styles.css.map */

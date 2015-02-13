@@ -36,6 +36,9 @@ li {
 	margin-top: 15px;
 }
 
+.event {
+	border-bottom: 1px solid #ddd;
+}
 .event, .listen, {
 	height: 180px;
 	padding-bottom: 20px;
@@ -48,15 +51,11 @@ li {
 	}
 }
 
-.event, .about-splash {
-	border-bottom: 1px solid #ddd;
-}
-
 .col-sm-4 {
 	border-left: 1px solid #ddd;
 }
 
-.splash-about {
+.splash-about, .watch {
 	display: none;
 }
 
@@ -110,8 +109,28 @@ li {
 	}
 
 	.splash-about {
+		border-left: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
 		display: inline-block;
 		height: 180px;
+	}
+
+	.watch {
+		display: inline-block;
+		border-left: 1px solid #ddd;
+		height: 300px;
+		.screen {
+			float: right;
+			margin-right: 50px;
+			height: 120px;
+			width: 200px;
+			background-color: #aaa;
+			border-radius: 10px;
+			button {
+				margin-left: 80px;
+				margin-top: 50px;
+			}
+		}
 	}
 
 
