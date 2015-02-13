@@ -27,13 +27,22 @@ li {
   margin-top: 15px; }
 
 .event, .listen {
-  border-bottom: 1px solid #ddd;
+  height: 180px;
   padding-bottom: 20px; }
   .event p, .event button, .listen p, .listen button {
     margin-left: 80px;
     margin-right: 20px; }
   .event h1, .listen h1 {
     padding-left: 20px; }
+
+.event, .about-splash {
+  border-bottom: 1px solid #ddd; }
+
+.col-sm-4 {
+  border-left: 1px solid #ddd; }
+
+.splash-about {
+  display: none; }
 
 .about {
   display: inline-block;
@@ -63,5 +72,19 @@ li {
         max-width: 50px;
         max-height: 50px;
         opacity: 0.6; }
+
+/*********** Desktop Styling ************/
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    margin-top: 12px;
+    font-size: 3em;
+    font-weight: normal; }
+
+  .banner {
+    height: 350px; }
+
+  .splash-about {
+    display: inline-block;
+    height: 180px; } }
 
 /*# sourceMappingURL=styles.css.map */

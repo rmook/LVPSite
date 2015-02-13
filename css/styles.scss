@@ -36,8 +36,8 @@ li {
 	margin-top: 15px;
 }
 
-.event, .listen {
-	border-bottom: 1px solid #ddd;
+.event, .listen, {
+	height: 180px;
 	padding-bottom: 20px;
 	p, button {
 		margin-left: 80px;
@@ -46,6 +46,18 @@ li {
 	h1 {
 		padding-left: 20px;
 	}
+}
+
+.event, .about-splash {
+	border-bottom: 1px solid #ddd;
+}
+
+.col-sm-4 {
+	border-left: 1px solid #ddd;
+}
+
+.splash-about {
+	display: none;
 }
 
 .about {
@@ -83,3 +95,30 @@ li {
 		}
 	}
 }
+
+/*********** Desktop Styling ************/
+
+@media only screen and (min-width : 768px) {
+
+	.navbar-brand {
+		margin-top: 12px;
+		font-size: 3em;
+		font-weight: normal;	
+	}
+	.banner {
+		height: 350px;
+	}
+
+	.splash-about {
+		display: inline-block;
+		height: 180px;
+	}
+
+
+}
+
+
+
+
+
+
