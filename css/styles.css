@@ -1,3 +1,10 @@
+/* colors */
+/*	light brown = A57745
+	dark brown = 583C1C
+	green = 5CB26A
+	purple = 8C59F1
+	
+
 /*********** Remove default styling ***********/
 a {
   color: #000;
@@ -7,13 +14,35 @@ li {
   list-style: none; }
 
 /*********** Mobile Styling ************/
+/** mobile nav **/
+nav ul {
+  display: none;
+  height: auto; }
+
+#pull {
+  display: block;
+  background-color: #ccc;
+  width: 100%;
+  position: relative; }
+
+#pull:after {
+  content: "";
+  background: url("../img/navicon.png") no-repeat;
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 10px; }
+
+/** custom BS nav styling **/
 .navbar-brand {
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 2px; }
 
 .filler {
-  height: 50px; }
+  height: 40px; }
 
 .banner {
   height: 240px;
@@ -75,6 +104,54 @@ li {
 
 /*********** Desktop Styling ************/
 @media only screen and (min-width: 768px) {
+  /** desktop nav **/
+  nav {
+    height: 40px;
+    width: 100%;
+    background: #ccc;
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 2px solid #aaa; }
+
+  nav ul {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 768px;
+    height: 40px; }
+    nav ul li:last-child a {
+      border-left: 1px solid #aaa; }
+    nav ul li {
+      display: inline;
+      float: right; }
+      nav ul li a {
+        color: #222;
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        line-height: 40px;
+        border-right: 1px solid #aaa;
+        box-sizing: border-box; }
+      nav ul li a:hover, nav ul li a:active {
+        background-color: #ddd; }
+
+  #pull {
+    display: none; }
+
+  /** clearfix **/
+  .clearfix:before,
+  .clearfix:after {
+    content: "  ";
+    display: table; }
+
+  .clearfix:after {
+    clear: both; }
+
+  .clearfix {
+    *zoom: 1; }
+
+  /** desktop BS styling **/
   .navbar-brand {
     margin-top: 12px;
     font-size: 3em;
