@@ -21,9 +21,15 @@ li {
 
 	/** mobile nav **/
 
-nav ul {
-	display: none;
-	height: auto;
+nav {
+	position: fixed;
+	top: 0;
+	z-index: 10000;
+	width: 100%;
+	ul {
+		display: none;
+		height: auto;
+	}
 }
 
 #pull {
@@ -37,7 +43,7 @@ nav ul {
 	content: "";
 	background: url('../img/navicon.png') no-repeat;
 	width: 30px;
-	height: 40px;
+	height: 50px;
 	display: inline-block;
 	position: absolute;
 	right: 15px;
@@ -54,7 +60,7 @@ nav ul {
 }
 
 .filler {
-	height:40px;
+	height:50px;
 }
 
 .banner {
@@ -66,7 +72,7 @@ nav ul {
 .navbar-right li {
 	text-align: center;
 	border-bottom: 1px solid #ddd;
-	height: 60px;
+	height: 50px;
 	margin-top: 15px;
 }
 
@@ -137,12 +143,11 @@ nav ul {
 /** desktop nav **/
 
 nav {
-	height: 40px;
+	height: 50px;
 	width: 100%;
 	background: #ccc;
 	font-size: 1em;
 	font-weight: bold;
-	position: relative;
 	border-bottom: 2px solid #aaa;
 }
 
@@ -151,7 +156,7 @@ nav ul {
 	padding: 0;
 	margin: 0 auto;
 	width: 768px;
-	height: 40px;
+	height: 50px;
 	li:last-child a {
 		border-left: 1px solid #aaa;
 	}
@@ -163,7 +168,7 @@ nav ul {
 			display: inline-block;
 			width: 100px;
 			text-align: center;
-			line-height: 40px;
+			line-height: 50px;
 			border-right: 1px solid #aaa;
 			box-sizing: border-box;
 		}

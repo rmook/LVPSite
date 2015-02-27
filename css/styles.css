@@ -15,9 +15,14 @@ li {
 
 /*********** Mobile Styling ************/
 /** mobile nav **/
-nav ul {
-  display: none;
-  height: auto; }
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%; }
+  nav ul {
+    display: none;
+    height: auto; }
 
 #pull {
   display: block;
@@ -29,7 +34,7 @@ nav ul {
   content: "";
   background: url("../img/navicon.png") no-repeat;
   width: 30px;
-  height: 40px;
+  height: 50px;
   display: inline-block;
   position: absolute;
   right: 15px;
@@ -42,7 +47,7 @@ nav ul {
   letter-spacing: 2px; }
 
 .filler {
-  height: 40px; }
+  height: 50px; }
 
 .banner {
   height: 240px;
@@ -52,7 +57,7 @@ nav ul {
 .navbar-right li {
   text-align: center;
   border-bottom: 1px solid #ddd;
-  height: 60px;
+  height: 50px;
   margin-top: 15px; }
 
 .event {
@@ -106,12 +111,11 @@ nav ul {
 @media only screen and (min-width: 768px) {
   /** desktop nav **/
   nav {
-    height: 40px;
+    height: 50px;
     width: 100%;
     background: #ccc;
     font-size: 1em;
     font-weight: bold;
-    position: relative;
     border-bottom: 2px solid #aaa; }
 
   nav ul {
@@ -119,7 +123,7 @@ nav ul {
     padding: 0;
     margin: 0 auto;
     width: 768px;
-    height: 40px; }
+    height: 50px; }
     nav ul li:last-child a {
       border-left: 1px solid #aaa; }
     nav ul li {
@@ -130,7 +134,7 @@ nav ul {
         display: inline-block;
         width: 100px;
         text-align: center;
-        line-height: 40px;
+        line-height: 50px;
         border-right: 1px solid #aaa;
         box-sizing: border-box; }
       nav ul li a:hover, nav ul li a:active {
