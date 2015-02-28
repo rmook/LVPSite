@@ -34,12 +34,20 @@ nav {
 		display: none;
 		height: auto;
 		background: #ccc;
+		margin-top: 50px;
 		padding-right: 20px;
 		z-index: 9000;
 		li {
+			padding-bottom: 20px;
 			text-align: right;
 			font-size: 1.5em;
 			font-weight: bold;
+			a {
+				padding: 5px;
+			}
+			a:hover, a:active {
+				background-color: #ddd;
+			}
 		}
 	}
 }
@@ -175,20 +183,20 @@ nav ul {
 	li {
 		display: inline;
 		float: right;
+		padding-bottom: 0px;
 		a {
 			color: #222;
 			display: inline-block;
+			padding: 0;
 			width: 100px;
 			text-align: center;
 			line-height: 50px;
 			border-right: 1px solid #aaa;
 			box-sizing: border-box;
 		}
-		a:hover, a:active {
-			background-color: #ddd;
-		}
 	}
 }
+
 #pull {
 		display: none;
 	}
