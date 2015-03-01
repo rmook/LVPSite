@@ -15,25 +15,25 @@ li {
 
 /*********** Mobile Styling ************/
 /** mobile nav **/
-.filler {
-  background: #ccc; }
-
 nav {
   position: fixed;
   top: 0;
   z-index: 10000;
-  width: 100%; }
+  width: 100%;
+  height: 50px;
+  background: #ccc;
+  border-bottom: 2px solid #666; }
   nav ul {
     display: none;
     height: auto;
     background: #ccc;
-    margin-top: 50px;
     opacity: 0.8;
-    padding-right: 20px;
+    padding: 0;
+    margin: 0;
     z-index: 9000; }
     nav ul li {
-      padding-bottom: 30px;
-      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-top: 20px;
       text-align: center;
       font-size: 1.5em;
       font-weight: bold; }
@@ -41,6 +41,9 @@ nav {
         padding: 5px; }
       nav ul li a:hover, nav ul li a:active {
         background-color: #ddd; }
+
+.selected {
+  background-color: #ddd; }
 
 #pull {
   display: block;
@@ -58,25 +61,21 @@ nav {
   right: 15px;
   top: 10px; }
 
-/** custom BS nav styling **/
-.navbar-brand {
+/** logo styling **/
+.logo {
+  display: inline-block;
   font-size: 2em;
-  font-weight: bold;
-  letter-spacing: 2px; }
+  letter-spacing: 1.5;
+  margin-top: 10px; }
+  .logo a {
+    display: inline;
+    padding-left: 15px; }
 
-.filler {
-  height: 50px; }
-
+/** banner styling **/
 .banner {
   height: 240px;
   border-bottom: 2px solid #000;
   background-color: #999; }
-
-.navbar-right li {
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  height: 50px;
-  margin-top: 15px; }
 
 .event {
   border-bottom: 1px solid #ddd; }
@@ -103,6 +102,7 @@ nav {
     margin-left: 15px;
     margin-right: 15px; }
 
+/** Footer Styling **/
 .footer {
   height: 70px;
   padding-top: 10px;
@@ -129,18 +129,13 @@ nav {
 @media only screen and (min-width: 768px) {
   /** desktop nav **/
   nav {
-    height: 50px;
-    width: 100%;
-    font-size: 1em;
-    font-weight: bold;
-    border-bottom: 2px solid #666; }
+    font-weight: bold; }
     nav ul {
       display: inline;
       float: right;
       padding: 0;
       opacity: 1;
-      margin: 0 auto;
-      height: 50px; }
+      margin: 0 auto; }
       nav ul li {
         display: inline;
         padding-bottom: 0px; }
@@ -157,24 +152,7 @@ nav {
   #pull {
     display: none; }
 
-  /** clearfix **/
-  .clearfix:before,
-  .clearfix:after {
-    content: "  ";
-    display: table; }
-
-  .clearfix:after {
-    clear: both; }
-
-  .clearfix {
-    *zoom: 1; }
-
-  /** desktop BS styling **/
-  .navbar-brand {
-    margin-top: 12px;
-    font-size: 3em;
-    font-weight: normal; }
-
+  /** desktop Banner **/
   .banner {
     height: 350px; }
 

@@ -1,25 +1,27 @@
 
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset=utf-8>
-	<title>Louisville Vocal Project</title>
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title><?php echo $pageID; ?></title>
+	<link rel="stylesheet" href="<?php echo BASE_URL;?>css/normalize.css">
+	<link rel="stylesheet" href="<?php echo BASE_URL;?>css/styles.css">
 </head>
 
 <body>
 
 <!-- 	*********** NAVBAR *************  -->
 
-	<nav class="clearfix" role="navigation">
+	<nav role="navigation">
 		<a href="#" id="pull"></a>
-		<ul class="clearfix" id="menu">
-		 	<li><a href="#">Link1</a></li>
-		 	<li><a href="#">Link2</a></li>
-		 	<li><a href="#">Link3</a></li>
-			<li><a href="#">Link4</a></li>
+		<div class="logo">
+			<a hre="<?php echo BASE_URL;?>">LVP</a>
+		</div>
+		<ul id="menu">
+		 	<li><a href="#" class = "<?php if ($pageID == "About") {echo "selected";}?>">About</a></li>
+		 	<li><a href="#" class = "<?php if ($pageID == "Events") {echo "selected";}?>">Events</a></li>
+		 	<li><a href="#">Listen</a></li>
+			<li><a href="#">Watch</a></li>
 	     </ul>
 	</nav>
 
@@ -27,8 +29,5 @@
 
 	<div class="filler"></div>
 
-
-
-
-
-
+</body>
+</html>
