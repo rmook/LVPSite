@@ -45,10 +45,12 @@ nav {
 			padding-bottom: 20px;
 			padding-top: 20px;
 			text-align: center;
-			font-size: 1.5em;
+			font-size: 1.2em;
 			a {
 				color: $textcolor;
 				padding: 5px;
+				-webkit-transition: background-color .5s;
+				transition: background-color .5s;
 			}
 			a:hover, a:active {
 				background-color: $selected;
