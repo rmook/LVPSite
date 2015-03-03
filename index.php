@@ -42,8 +42,7 @@ include(ROOT_PATH . 'inc/header.php');
 
 			<div class="listen col-sm-7">
 				<h1><a href="#">Listen</a></h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat nibh eu lobortis malesuada.</p>
-				<button>Play</button>
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/193055163&amp;color=8EE59C&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
 			</div>
 
 			<!-- ************* WATCH SECTION ************ -->
