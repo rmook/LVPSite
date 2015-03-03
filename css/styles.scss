@@ -160,16 +160,20 @@ nav {
 
 /*main content area styling*/
 
-.event, .listen, {
+.event, .listen, .splash-about, .watch{
 	height: auto;
 	padding-bottom: 20px;
 	p {
 		margin-left: 80px;
 		font-size: .8em;
+		a {
+			text-decoration: underline;
+		}
 	}
 	h1 {
 		font-size: 1.2em;
-		padding-left: 20px;
+		margin-left: 20px;
+		text-decoration: underline;
 	}
 }
 
@@ -251,7 +255,8 @@ nav {
 	}
 }
 
-/*********** Desktop Styling ************/
+
+/******************DESKTOP   STYLING  ********************/
 
 @media only screen and (min-width : 768px) {
 
@@ -277,7 +282,7 @@ nav {
 		}
 	}
 
-	/*removes navicon*/
+	/*desktop removes navicon*/
 
 	#navicon{
 			display: none;
@@ -290,10 +295,11 @@ nav {
 		p {
 			top: 260px;
 			font-size: 2em;
+			margin: 0;
 		}
 	}
 
-	/*resizes color overlay of banner image*/
+	/*desktop resizes color overlay of banner image*/
 
 	.banner::after {
 		height: 350;
@@ -323,7 +329,56 @@ nav {
 			}
 		}
 	}
+
+	/**  desktop main content area styling**/
+
+	.event, .listen, .splash-about, .watch{
+		display: inline-block;
+		height: 160px;
+		display: inline-block;
+		h1 {
+			display: inline-block;
+			float: left;
+			font-size: 1.8em;
+			text-decoration: none;
+			height: 100%;
+			margin-bottom: 0;
+		}
+		p {
+			display: inline;
+			margin: 0;
+			width: 80%;
+			font-size: .8em;
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+		/*desktop event area styling*/
+
+	.event {
+		width: 60%;
+		border-right: 1px solid $borders;
+		p {
+			margin: 30px;
+			display: inline-block;
+			width: 70%;
+		}
+		button {
+			display: block;
+			margin: auto;
+		}
+		
+	}
 }
+
+
+
+
+
+
+
+
 
 
 

@@ -114,15 +114,18 @@ nav {
   z-index: 2; }
 
 /*main content area styling*/
-.event, .listen {
+.event, .listen, .splash-about, .watch {
   height: auto;
   padding-bottom: 20px; }
-  .event p, .listen p {
+  .event p, .listen p, .splash-about p, .watch p {
     margin-left: 80px;
     font-size: .8em; }
-  .event h1, .listen h1 {
+    .event p a, .listen p a, .splash-about p a, .watch p a {
+      text-decoration: underline; }
+  .event h1, .listen h1, .splash-about h1, .watch h1 {
     font-size: 1.2em;
-    padding-left: 20px; }
+    margin-left: 20px;
+    text-decoration: underline; }
 
 /* events area styling */
 .event {
@@ -185,7 +188,7 @@ nav {
         max-height: 50px;
         opacity: 0.6; }
 
-/*********** Desktop Styling ************/
+/******************DESKTOP   STYLING  ********************/
 @media only screen and (min-width: 768px) {
   /** desktop nav **/
   nav ul {
@@ -205,7 +208,7 @@ nav {
         line-height: 50px;
         box-sizing: border-box; }
 
-  /*removes navicon*/
+  /*desktop removes navicon*/
   #navicon {
     display: none; }
 
@@ -214,9 +217,10 @@ nav {
     height: 350px; }
     .banner p {
       top: 260px;
-      font-size: 2em; }
+      font-size: 2em;
+      margin: 0; }
 
-  /*resizes color overlay of banner image*/
+  /*desktop resizes color overlay of banner image*/
   .banner::after {
     height: 350; }
 
@@ -239,6 +243,38 @@ nav {
       border-radius: 10px; }
       .watch .screen button {
         margin-left: 80px;
-        margin-top: 50px; } }
+        margin-top: 50px; }
+
+  /**  desktop main content area styling**/
+  .event, .listen, .splash-about, .watch {
+    display: inline-block;
+    height: 160px;
+    display: inline-block; }
+    .event h1, .listen h1, .splash-about h1, .watch h1 {
+      display: inline-block;
+      float: left;
+      font-size: 1.8em;
+      text-decoration: none;
+      height: 100%;
+      margin-bottom: 0; }
+    .event p, .listen p, .splash-about p, .watch p {
+      display: inline;
+      margin: 0;
+      width: 80%;
+      font-size: .8em; }
+      .event p a, .listen p a, .splash-about p a, .watch p a {
+        text-decoration: underline; }
+
+  /*desktop event area styling*/
+  .event {
+    width: 60%;
+    border-right: 1px solid #583C1C; }
+    .event p {
+      margin: 30px;
+      display: inline-block;
+      width: 70%; }
+    .event button {
+      display: block;
+      margin: auto; } }
 
 /*# sourceMappingURL=styles.css.map */
