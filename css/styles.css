@@ -1,10 +1,4 @@
 /* colors */
-/*	light brown = A57745
-	dark brown = 583C1C
-	green = 5CB26A
-	purple = 8C59F1
-	
-
 /*********** Remove default styling ***********/
 a {
   color: #000;
@@ -21,13 +15,13 @@ nav {
   z-index: 10000;
   width: 100%;
   height: 50px;
-  background: #ccc;
-  border-bottom: 2px solid #666; }
+  background-color: #F1BA7D;
+  border-bottom: 2px solid #583C1C; }
   nav ul {
     display: none;
     height: auto;
-    background: #ccc;
-    opacity: 0.8;
+    background: #F1BA7D;
+    opacity: 0.9;
     padding: 0;
     margin: 0;
     z-index: 9000; }
@@ -35,24 +29,20 @@ nav {
       padding-bottom: 20px;
       padding-top: 20px;
       text-align: center;
-      font-size: 1.5em;
-      font-weight: bold; }
+      font-size: 1.5em; }
       nav ul li a {
+        color: #222;
         padding: 5px; }
       nav ul li a:hover, nav ul li a:active {
-        background-color: #ddd; }
+        background-color: #A57745; }
 
+/*changes the color of the link to a current page.  
+"selected" class is added by PHP to the header include file*/
 .selected {
   background-color: #ddd; }
 
-#pull {
-  display: block;
-  background-color: #ccc;
-  width: 100%;
-  position: relative; }
-
-#pull:after {
-  content: "";
+/*displays and positions navicon in mobile view*/
+#navicon {
   background: url("../img/navicon.png") no-repeat;
   width: 30px;
   height: 50px;
@@ -65,20 +55,73 @@ nav {
 .logo {
   display: inline-block;
   font-size: 2em;
+  font-weight: bold;
   letter-spacing: 1.5;
   margin-top: 10px; }
   .logo a {
+    color: #222;
     display: inline;
     padding-left: 15px; }
 
 /** banner styling **/
 .banner {
   height: 240px;
-  border-bottom: 2px solid #000;
-  background-color: #999; }
+  width: 100%;
+  border-bottom: 2px solid #583C1C;
+  background: url("../img/Cathedral1.jpg") no-repeat;
+  background-size: cover;
+  background-color: #F1BA7D; }
+  .banner p {
+    position: absolute;
+    top: 180px;
+    right: 30px;
+    font-size: 1.5em;
+    z-index: 10;
+    -webkit-animation: groupname 5s;
+    animation: groupname 5s; }
 
+/*	animates group name to change color and fade right on page load*/
+@-webkit-keyframes groupname {
+  from {
+    color: #F1BA7D;
+    right: 50; }
+  to {
+    color: #222;
+    right: 30; } }
+@keyframes groupname {
+  from {
+    color: #F1BA7D;
+    right: 50; }
+  to {
+    color: #222;
+    right: 30; } }
+/*	semi-opaque color layer over banner image */
+.banner::after {
+  content: "";
+  background-color: #F1BA7D;
+  opacity: 0.4;
+  height: 240px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2; }
+
+/* events area styling */
 .event {
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #583C1C; }
+  .event button {
+    background-color: #8EE59C;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 140px;
+    font-weight: bold;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s; }
+  .event button:hover, .event button:active {
+    background-color: #C3FFCD;
+    border: 2px solid #8EE59C; }
 
 .event, .listen {
   height: 180px;
@@ -89,12 +132,10 @@ nav {
   .event h1, .listen h1 {
     padding-left: 20px; }
 
-.col-sm-4 {
-  border-left: 1px solid #ddd; }
-
 .splash-about, .watch {
   display: none; }
 
+/* about area styling */
 .about {
   display: inline-block;
   margin-bottom: 30px; }
@@ -106,7 +147,7 @@ nav {
 .footer {
   height: 70px;
   padding-top: 10px;
-  background-color: #ddd; }
+  background-color: #F1BA7D; }
   .footer p {
     display: inline;
     float: left;
@@ -128,43 +169,47 @@ nav {
 /*********** Desktop Styling ************/
 @media only screen and (min-width: 768px) {
   /** desktop nav **/
-  nav {
-    font-weight: bold; }
-    nav ul {
+  nav ul {
+    display: inline;
+    float: right;
+    padding: 0;
+    opacity: 1;
+    margin: 0 auto; }
+    nav ul li {
       display: inline;
-      float: right;
-      padding: 0;
-      opacity: 1;
-      margin: 0 auto; }
-      nav ul li {
-        display: inline;
-        padding-bottom: 0px; }
-        nav ul li a {
-          color: #222;
-          display: inline-block;
-          padding: 0;
-          width: 100px;
-          text-align: center;
-          line-height: 50px;
-          border-left: 1px solid #aaa;
-          box-sizing: border-box; }
+      padding-bottom: 0px; }
+      nav ul li a {
+        display: inline-block;
+        padding: 0;
+        width: 100px;
+        text-align: center;
+        line-height: 50px;
+        box-sizing: border-box; }
 
-  #pull {
+  /*removes navicon*/
+  #navicon {
     display: none; }
 
   /** desktop Banner **/
   .banner {
     height: 350px; }
+    .banner p {
+      top: 260px;
+      font-size: 2em; }
+
+  /*resizes color overlay of banner image*/
+  .banner::after {
+    height: 350; }
 
   .splash-about {
-    border-left: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #583C1C;
+    border-bottom: 1px solid #583C1C;
     display: inline-block;
     height: 180px; }
 
   .watch {
     display: inline-block;
-    border-left: 1px solid #ddd;
+    border-left: 1px solid #583C1C;
     height: 300px; }
     .watch .screen {
       float: right;

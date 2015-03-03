@@ -2,7 +2,7 @@
 
 var menu = $("#menu");
 
-$("#pull").click(function() {
+$("#navicon").click(function() {
 	menu.slideToggle("slow")
 });
 

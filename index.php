@@ -8,7 +8,9 @@ include(ROOT_PATH . 'inc/header.php');
 
 <!-- ************* BANNER IMAGE ************ -->
 
-	<div class="banner"></div>
+	<div class="banner">
+		<p>Louisville Vocal Project</p>
+	</div>
 
 <!-- GRID SYSTEM -->
 

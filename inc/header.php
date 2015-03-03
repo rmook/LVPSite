@@ -13,9 +13,9 @@
 <!-- 	*********** NAVBAR *************  -->
 
 	<nav role="navigation">
-		<a href="#" id="pull"></a>
+		<a href="#" id="navicon"></a>
 		<div class="logo">
-			<a hre="<?php echo BASE_URL;?>">LVP</a>
+			<a href="<?php echo BASE_URL;?>">LVP</a>
 		</div>
 		<ul id="menu">
 		 	<li><a href="#" class = "<?php if ($pageID == "About") {echo "selected";}?>">About</a></li>
