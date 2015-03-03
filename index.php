@@ -24,7 +24,7 @@ include(ROOT_PATH . 'inc/header.php');
 			<div class="event col-sm-7">
 				<h1><a href="<?php echo BASE_URL;?>events">Events</a></h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat nibh eu lobortis malesuada.</p>
-				<button>Buy Tickets</button>
+				<button>Tickets</button>
 			</div>
 
 			<!-- ************* About SECTION ************ -->
