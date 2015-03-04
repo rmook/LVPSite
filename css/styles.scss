@@ -71,7 +71,7 @@ nav {
 		"selected" class is added by PHP to the header include file*/
 
 .selected {
-	background-color: #ddd;
+	background-color: $selected;
 }
 
 		/*displays and positions navicon in mobile view*/
@@ -104,7 +104,7 @@ nav {
 	/** banner styling **/
 
 .banner {
-	height: 240px;
+	height: 190px;
 	width: 100%;
 	border-bottom: 2px solid $borders;
 	background: url('../img/Cathedral1.jpg') no-repeat;
@@ -152,7 +152,8 @@ nav {
 	content: "";
 	background-color: $background;
 	opacity: 0.4;
-	height: 240px;
+	margin-top: 50px;
+	height: 190px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -160,21 +161,27 @@ nav {
 	z-index: 2;
 }
 
+/*shifts following elements from under the nav*/
+
+.filler {
+	height: 50px;
+}
 /*main content area styling*/
 
-.event, .listen, .splash-about, .watch{
+.event, .listen, .splash-about, .watch, .about{
 	height: auto;
 	padding-bottom: 20px;
 	display: inline-block;
 	width: 100%;
 	p {
 		margin-left: 20%;
+		padding-right: 15px;
 		font-size: .8em;
 		a {
 			text-decoration: underline;
 		}
 	}
-	h1 {
+	h1, h2 {
 		font-size: 1.2em;
 		margin-left: 20px;
 	}
@@ -215,14 +222,15 @@ nav {
 	/* about area styling */
 
 
-.about {
-	display: inline-block;
-	margin-bottom: 30px;
-	h2, p {
-		margin-left: 15px;
-		margin-right: 15px;
+	.headshot {
+		background: url('../img/headshot.jpg') no-repeat;
+		background-size: cover;
+		height: 200px;
+		width: 140px;
+		margin-left: 20%;
 	}
-}
+
+
 
 	/** Footer Styling **/
 
@@ -236,8 +244,9 @@ nav {
 		float: left;
 		width: 50%;
 		margin-bottom: 5px;
+		margin-top: 15px;
 		margin-left: 15px;
-		font-size: .8em;
+		font-size: .7em;
 		a {
 			text-decoration: underline;
 		}
@@ -363,7 +372,7 @@ nav {
  	/** desktop Banner **/
 
 	.banner {
-		height: 350px;
+		height: 300px;
 		p {
 			top: 280px;
 			font-size: 2em;
@@ -374,7 +383,7 @@ nav {
 	/*desktop resizes color overlay of banner image*/
 
 	.banner::after {
-		height: 350;
+		height: 300px;
 	}
 
 	.watch iframe {

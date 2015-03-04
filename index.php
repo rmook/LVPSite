@@ -18,7 +18,7 @@ include(ROOT_PATH . 'inc/header.php');
 			<!-- ************* EVENTS SECTION ************ -->
 
 			<div class="event grid-7 grid-container">
-				<h1 class="grid-4"><a href="<?php echo BASE_URL;?>events">Events</a></h1>
+				<h1 class="grid-4"><a href="<?php echo BASE_URL;?>Events">Events</a></h1>
 				<p class="grid-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat nibh eu lobortis malesuada.  <a href="#">More Events</a></p>
 				<button>Tickets</button>
 			</div>
@@ -26,7 +26,7 @@ include(ROOT_PATH . 'inc/header.php');
 			<!-- ************* About SECTION ************ -->
 
 			<div class="splash-about grid-5 grid-container">
-				<h1 class="grid-4"><a href="<?php echo BASE_URL;?>about">About</a></h1>
+				<h1 class="grid-4"><a href="<?php echo BASE_URL;?>About">About</a></h1>
 				<p class="grid-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat nibh eu lobortis malesuada.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat nibh eu lobortis malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat nibh eu lobortis malesuada.</p>
 			</div>
 

@@ -19,8 +19,8 @@
 			<a href="<?php echo BASE_URL;?>">LVP</a>
 		</div>
 		<ul id="menu">
-		 	<li><a href="#" class = "<?php if ($pageID == "About") {echo "selected";}?>">About</a></li>
-		 	<li><a href="#" class = "<?php if ($pageID == "Events") {echo "selected";}?>">Events</a></li>
+		 	<li><a href="<?php echo BASE_URL;?>About/" class = "<?php if ($pageID == "About") {echo "selected";}?>">About</a></li>
+		 	<li><a href="<?php echo BASE_URL;?>Events/" class = "<?php if ($pageID == "Events") {echo "selected";}?>">Events</a></li>
 		 	<li><a href="#">Listen</a></li>
 			<li><a href="#">Watch</a></li>
 	     </ul>
