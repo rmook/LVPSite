@@ -45,12 +45,8 @@ include(ROOT_PATH . 'inc/header.php');
 
 			<div class="watch grid-5 grid-container">
 				<h1 class="grid-4"><a href="#">Watch</a></h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat nibh eu lobortis malesuada.</p>
-				<div class="screen">
-					<button>Play</button>
-				</div>
+				<iframe src="https://player.vimeo.com/video/69186856?color=8ee59c&portrait=0" width="221" height="166" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>			</div>
 			</div>
-	</div>
 	
 <?php
 include(ROOT_PATH . 'inc/footer.php');

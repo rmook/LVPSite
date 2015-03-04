@@ -168,8 +168,7 @@ nav {
 .footer {
   display: inline-block;
   width: 100%;
-  height: 100px;
-  padding-top: 10px;
+  height: 80px;
   background-color: #F1BA7D; }
   .footer p {
     display: inline;
@@ -287,16 +286,9 @@ nav {
   .banner::after {
     height: 350; }
 
-  .watch .screen {
-    float: right;
-    margin-right: 50px;
-    height: 120px;
-    width: 200px;
-    background-color: #aaa;
-    border-radius: 10px; }
-    .watch .screen button {
-      margin-left: 80px;
-      margin-top: 50px; }
+  .watch iframe {
+    display: block;
+    margin: auto; }
 
   /*  main content area styling  */
   .event, .splash-about {
