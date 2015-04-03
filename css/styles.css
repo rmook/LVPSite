@@ -20,12 +20,11 @@ nav {
   z-index: 10000;
   width: 100%;
   height: 50px;
-  background-color: #F1BA7D;
-  border-bottom: 2px solid #583C1C; }
+  background-color: #222; }
   nav ul {
     display: none;
     height: auto;
-    background: #F1BA7D;
+    background: #222;
     opacity: 0.9;
     padding: 0;
     margin: 0;
@@ -36,17 +35,17 @@ nav {
       text-align: center;
       font-size: 1.2em; }
       nav ul li a {
-        color: #222;
+        color: #fff;
         padding: 5px;
         -webkit-transition: background-color .5s;
         transition: background-color .5s; }
       nav ul li a:hover, nav ul li a:active {
-        background-color: #A57745; }
+        background-color: #666; }
 
 /*changes the color of the link to a current page.  
 "selected" class is added by PHP to the header include file*/
 .selected {
-  background-color: #A57745; }
+  background-color: #666; }
 
 /*displays and positions navicon in mobile view*/
 #navicon {
@@ -66,7 +65,7 @@ nav {
   letter-spacing: 1.5;
   margin-top: 4px; }
   .logo a {
-    color: #222;
+    color: #fff;
     display: inline;
     padding-left: 15px; }
 
@@ -74,40 +73,38 @@ nav {
 .banner {
   height: 190px;
   width: 100%;
-  border-bottom: 2px solid #583C1C;
-  background: url("../img/Cathedral1.jpg") no-repeat;
+  background: url("../img/GothCathedralSmall.jpg") no-repeat;
   background-size: cover;
-  background-color: #F1BA7D; }
+  background-color: #222; }
   .banner p {
-    color: #F1BA7D;
+    color: #222;
     position: absolute;
-    top: 40px;
-    right: 50px;
+    top: 170px;
+    left: 50px;
     font-size: 1.5em;
     z-index: 10;
-    -webkit-animation: groupname 6s 0.5s forwards;
-    animation: groupname 6s 0.5s forwards; }
+    -webkit-animation: groupname 3s 0.5s forwards;
+    animation: groupname 3s 0.5s forwards; }
 
 /*	animates group name to change color and fade right on page load*/
 @-webkit-keyframes groupname {
   from {
-    color: #F1BA7D;
-    right: 50; }
-  to {
     color: #222;
-    right: 30; } }
+    left: 50; }
+  to {
+    color: #fff;
+    left: 30; } }
 @keyframes groupname {
   from {
-    color: #F1BA7D;
-    right: 50; }
-  to {
     color: #222;
-    right: 30; } }
-/*	semi-opaque color layer over banner image */
+    left: 50; }
+  to {
+    color: #fff;
+    left: 30; } }
+/*	gradient color layer over banner image */
 .banner::after {
   content: "";
-  background-color: #F1BA7D;
-  opacity: 0.4;
+  background: linear-gradient(to left, transparent, black);
   margin-top: 50px;
   height: 190px;
   top: 0;
@@ -127,55 +124,60 @@ nav {
   display: inline-block;
   width: 100%; }
   .event p, .listen p, .splash-about p, .watch p, .about p {
-    margin-left: 20%;
-    padding-right: 15px;
+    margin-right: 15px;
+    margin-left: 25px;
     font-size: .8em; }
     .event p a, .listen p a, .splash-about p a, .watch p a, .about p a {
       text-decoration: underline; }
-  .event h1, .event h2, .listen h1, .listen h2, .splash-about h1, .splash-about h2, .watch h1, .watch h2, .about h1, .about h2 {
-    font-size: 1.2em;
-    margin-left: 20px; }
+  .event h1, .event h2, .event h4, .listen h1, .listen h2, .listen h4, .splash-about h1, .splash-about h2, .splash-about h4, .watch h1, .watch h2, .watch h4, .about h1, .about h2, .about h4 {
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 1.2em; }
 
 /* events area styling */
-.event {
-  border-bottom: 1px solid #583C1C; }
-  .event p {
-    display: inline-block;
-    width: 60%;
-    margin-top: 0; }
-  .event button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #8EE59C;
-    border: none;
-    border-radius: 5px;
-    height: 40px;
-    width: 140px;
-    letter-spacing: 1.2;
-    -webkit-transition: background-color .5s;
-    transition: background-color .5s; }
-  .event button:hover, .event button:active {
-    background-color: #C3FFCD;
-    border: 2px solid #8EE59C; }
+.event ul {
+  font-size: .9em; }
+.event button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #86E57B;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 140px;
+  font-weight: bold;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s; }
+.event button:hover, .event button:active {
+  background-color: #1FA513;
+  border: 2px solid #86E57B; }
 
 .splash-about, .watch {
   display: none; }
 
-/* about area styling */
+/*listen area styling */
+.listen iframe {
+  margin-top: 15px; }
+
+/* about page mobile styling */
 .headshot {
-  background: url("../img/headshot.jpg") no-repeat;
-  background-size: cover;
+  float: left;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
   height: 200px;
   width: 140px;
-  margin-left: 20%; }
+  background: url("../img/headshot.jpg") no-repeat;
+  background-size: cover; }
 
 /** Footer Styling **/
 .footer {
   display: inline-block;
   width: 100%;
   height: 80px;
-  background-color: #F1BA7D; }
+  background-color: #222; }
   .footer p {
     display: inline;
     float: left;
@@ -204,60 +206,6 @@ nav {
   /*show about and watch sections*/
   .splash-about, .watch {
     display: inline-block; }
-
-  /*****************GRID***********************/
-  .grid-container {
-    float: left;
-    min-height: 1px; }
-
-  .grid-container:first-child {
-    left-margin: 0; }
-
-  /* Columns are 65px wide, with 20px gutters
-  =========================================== */
-  .grid-1 {
-    width: 6.5%; }
-
-  .grid-2 {
-    width: 15%; }
-
-  .grid-3 {
-    width: 23.5%; }
-
-  .grid-4 {
-    width: 33%; }
-
-  .grid-5 {
-    width: 41.5%; }
-
-  .grid-6 {
-    width: 49%; }
-
-  .grid-7 {
-    width: 58%; }
-
-  .grid-8 {
-    width: 67%; }
-
-  .grid-9 {
-    width: 74.5%; }
-
-  .grid-10 {
-    width: 83%; }
-
-  .grid-11 {
-    width: 91.5%; }
-
-  .grid-12 {
-    width: 100%; }
-
-  /* Clearfix
-  ================================ */
-  .group:after,
-  .grid-container:after {
-    content: " ";
-    display: table;
-    clear: both; }
 
   /** desktop nav **/
   nav ul {
@@ -289,7 +237,7 @@ nav {
       font-size: 2em;
       margin: 0; }
 
-  /*desktop resizes color overlay of banner image*/
+  /*desktop resizes gradient overlay of banner image*/
   .banner::after {
     height: 300px; }
 
@@ -297,14 +245,24 @@ nav {
     display: block;
     margin: auto; }
 
-  /*  main content area styling  */
+  /*********  main content area styling  ***********/
+  /* height for top row */
   .event, .splash-about {
-    height: 150px;
-    border-bottom: 1px solid #583C1C; }
+    height: 220px; }
 
-  .event, .listen {
-    border-right: 1px solid #583C1C; }
+  /* width for left column */
+  .event, .listen, .splash-about, .watch {
+    display: inline-block;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
 
+  /* width for right column */
+  .splash-about, .watch {
+    float: right; }
+
+  /* set text overflow for splash page about section **/
   .splash-about {
     overflow: scroll; } }
 
