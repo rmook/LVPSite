@@ -24,7 +24,7 @@ li {
 
 body {
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lustria', serif;
 }
 
 /*********** Mobile Styling ************/
@@ -39,6 +39,7 @@ nav {
 	width: 100%;
 	height: 50px;
 	background-color: $background;
+	font-family: 'Cinzel', serif;
 	ul {
 		display: none;
 		height: auto;
@@ -108,6 +109,7 @@ nav {
 	background-size: cover;
 	background-color: $background;
 	p {
+		font-family: 'Cinzel', serif;
 		color: $background;
 		position: absolute;
 		top: 170px;
@@ -178,6 +180,7 @@ nav {
 		}
 	}
 	h1, h2, h4 {
+		font-family: 'Cinzel', serif;
 		margin-top: 15px;
 		text-align: center;
 		margin-bottom: 0px;
@@ -351,7 +354,7 @@ nav {
 	.splash-about, .watch {
 		float: right;
 	}
-	
+
 	/* set text overflow for splash page about section **/
 
 	.splash-about {

@@ -10,7 +10,7 @@ li {
 /*font-family*/
 body {
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Lustria', serif; }
 
 /*********** Mobile Styling ************/
 /** mobile nav **/
@@ -20,7 +20,8 @@ nav {
   z-index: 10000;
   width: 100%;
   height: 50px;
-  background-color: #222; }
+  background-color: #222;
+  font-family: 'Cinzel', serif; }
   nav ul {
     display: none;
     height: auto;
@@ -77,6 +78,7 @@ nav {
   background-size: cover;
   background-color: #222; }
   .banner p {
+    font-family: 'Cinzel', serif;
     color: #222;
     position: absolute;
     top: 170px;
@@ -130,6 +132,7 @@ nav {
     .event p a, .listen p a, .splash-about p a, .watch p a, .about p a {
       text-decoration: underline; }
   .event h1, .event h2, .event h4, .listen h1, .listen h2, .listen h4, .splash-about h1, .splash-about h2, .splash-about h4, .watch h1, .watch h2, .watch h4, .about h1, .about h2, .about h4 {
+    font-family: 'Cinzel', serif;
     margin-top: 15px;
     text-align: center;
     margin-bottom: 0px;

@@ -4,8 +4,8 @@
 	<meta charset=utf-8>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title><?php echo $pageID; ?></title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="<?php echo BASE_URL;?>css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Lustria|Cinzel:400,700' rel='stylesheet' type='text/css'>	
+    <link rel="stylesheet" href="<?php echo BASE_URL;?>css/normalize.css">
 	<link rel="stylesheet" href="<?php echo BASE_URL;?>css/styles.css">
 </head>
 
